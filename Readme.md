@@ -12,7 +12,7 @@ See [this](https://www.linode.com/docs/applications/configuration-management/sec
 
 1. Visit the prior art link above and build/install everything as directed
 
-2. Clone this repo to a local folder: `git clone https://github.com/tyson312/terraform-esxi.git`
+2. Clone this repo to a local folder: `git clone https://github.com/tyson312/terraform-esxi-lab
 
 3. Edit `variables.tf` to match your host
 
