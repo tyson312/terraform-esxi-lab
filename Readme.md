@@ -14,9 +14,15 @@ See [this](https://www.linode.com/docs/applications/configuration-management/sec
 
 2. Clone this repo to a local folder: `git clone https://github.com/tyson312/terraform-esxi-lab
 
-3. Edit `variables.tf` to match your host
+3. Create a file `terraform.tfvars` in this same folder, to store the esxi password. **Do NOT check this file into version control or you risk exposing this password to the internet!** 
 
-4. Grab a linux image to deploy and save it locally, and edit `main.tf` to use this file. Alternatively, use [ubuntu cloud images](https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64.ova) -- copy that link and put it in `main.tf` as the ovf_source
+The contents of this file is as follows (change dummy to the actual plaintext password):
+
+```bash
+esxi_password = "dummy"
+```
+
+4. Grab a linux image (ova/ovf) to deploy and save it locally, and edit `main.tf` to use this file. Alternatively, use [ubuntu cloud images](https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64.ova) -- copy that link and put it in `main.tf` as the ovf_source
 
 5. now we terraform!
 
